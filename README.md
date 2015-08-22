@@ -7,7 +7,7 @@ A small collection of useful helper methods that I use in several projects.
 
 **Pull requests and/or optimization proposals are always welcome!**
 
-##Sope
+##Scope
 
 ###ArrayHelper
 
