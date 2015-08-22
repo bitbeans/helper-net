@@ -1,0 +1,13 @@
+language: csharp
+sudo: false
+os:
+ - linux
+mono:
+  - latest
+solution: helper-net.sln
+install:
+  - nuget restore helper-net.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Debug helper-net.sln
+  - mono --runtime=v4.0 ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Tests/bin/Debug/Tests.dll
