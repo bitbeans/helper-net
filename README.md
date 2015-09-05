@@ -43,6 +43,22 @@ static byte[] IntegerToLittleEndian(int data)
 static byte[] Xor(byte[] data, IReadOnlyList<byte> keys)
 ```
 
+###StreamHelper
+
+```csharp 
+static byte[] ReadFully(Stream input)
+```
+
+###ShellHelper
+
+```csharp 
+static string Escape(string argument, bool quote = false)
+```
+
+```csharp 
+static string ExecuteShellCommand(string filename, string arguments, int timeout = 9000)
+```
+
 ###PaddingHelper
 
 ```csharp 

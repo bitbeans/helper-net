@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>helper-net</id>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
         <authors>Christian Hermann</authors>
         <owners>Christian Hermann</owners>
-        <licenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE</licenseUrl>
+        <licenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE.md</licenseUrl>
         <projectUrl>https://github.com/bitbeans/helper-net</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>ArrayHelper
@@ -28,7 +28,14 @@ PaddingHelper
 RandomHelper
 - SecureRandomProvider
 - RandomProvider
-- Well512RandomProvider</description>
+- Well512RandomProvider
+
+StreamHelper
+- ReadFully
+
+ShellHelper
+- Escape
+- ExecuteShellCommand</description>
         <summary>Small but useful .NET helper classes</summary>
         <releaseNotes>0.1.0
 * Initial release</releaseNotes>
@@ -37,6 +44,6 @@ RandomHelper
         <tags>helper random array convert padding crypt xor pkcs7 well512</tags>
     </metadata>
     <files>
-        <file src="helper-net\bin\Debug\Helper.dll" target="lib\net45\Helper.dll" />
+        <file src="helper-net\bin\Release\Helper.dll" target="lib\net45\Helper.dll" />
     </files>
 </package>
