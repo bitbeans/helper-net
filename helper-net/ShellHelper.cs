@@ -61,7 +61,10 @@ namespace Helper
                 process.StartInfo.Arguments = arguments;
                 process.StartInfo.UseShellExecute = false;
                 //set it to english
-                process.StartInfo.EnvironmentVariables.Add("LC_ALL", "C");
+                if (!process.StartInfo.EnvironmentVariables.ContainsKey("LC_ALL"))
+                {
+                    process.StartInfo.EnvironmentVariables.Add("LC_ALL", "C");
+                }
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.RedirectStandardError = true;
 

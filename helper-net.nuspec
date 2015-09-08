@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>helper-net</id>
-        <version>0.1.1</version>
+        <version>0.1.2</version>
         <authors>Christian Hermann</authors>
         <owners>Christian Hermann</owners>
         <licenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE.md</licenseUrl>
@@ -37,7 +37,11 @@ ShellHelper
 - Escape
 - ExecuteShellCommand</description>
         <summary>Small but useful .NET helper classes</summary>
-        <releaseNotes>0.1.0
+        <releaseNotes>0.1.2
+* Fixed ShellHelper
+0.1.1
+* Added more helper
+0.1.0
 * Initial release</releaseNotes>
         <copyright>Copyright (c) 2015 Christian Hermann (bitbeans)</copyright>
         <language>en-US</language>
