@@ -1,63 +1,53 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB842F16-863B-4E86-B693-CEAA46BE6017}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Helper</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Helper</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <RootNamespace>Helper</RootNamespace>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <Authors>Christian Hermann</Authors>
+    <Company>bitbeans</Company>
+    <PackageProjectUrl>https://github.com/bitbeans/helper-net</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE.md</PackageLicenseUrl>
+    <Copyright>Copyright (c) 2015 - 2017 Christian Hermann (bitbeans)</Copyright>
+    <Description>Small but useful .NET helper classes
+
+ArrayHelper
+- ConcatArrays
+- SubArray
+- ConstantTimeEquals
+
+ConvensionHelper
+- IntegerToLittleEndian
+
+CryptoHelper
+- Xor
+
+PaddingHelper
+- AddPkcs7
+- RemovePkcs7
+- AddZero
+- RemoveZero
+
+RandomHelper
+- SecureRandomProvider
+- RandomProvider
+- Well512RandomProvider
+
+StreamHelper
+- ReadFully
+
+ShellHelper
+- Escape
+- ExecuteShellCommand</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>helper random array convert padding crypt xor pkcs7 well512</PackageTags>
+    <Version>0.2.0</Version>
+    <PackageId>helper-net</PackageId>
+    <Product>helper-net</Product>
+    <PackageReleaseNotes>.NET Standard 2.0</PackageReleaseNotes>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ArrayHelper.cs" />
-    <Compile Include="ShellHelper.cs" />
-    <Compile Include="StreamHelper.cs" />
-    <Compile Include="ConversionHelper.cs" />
-    <Compile Include="CryptoHelper.cs" />
-    <Compile Include="PaddingHelper.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomHelper.cs" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
