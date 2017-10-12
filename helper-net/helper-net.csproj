@@ -11,42 +11,43 @@
     <PackageProjectUrl>https://github.com/bitbeans/helper-net</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE.md</PackageLicenseUrl>
     <Copyright>Copyright (c) 2015 - 2017 Christian Hermann (bitbeans)</Copyright>
-    <Description>Small but useful .NET helper classes
-
-ArrayHelper
-- ConcatArrays
-- SubArray
-- ConstantTimeEquals
-
-ConvensionHelper
-- IntegerToLittleEndian
-
-CryptoHelper
-- Xor
-
-PaddingHelper
-- AddPkcs7
-- RemovePkcs7
-- AddZero
-- RemoveZero
-
-RandomHelper
-- SecureRandomProvider
-- RandomProvider
-- Well512RandomProvider
-
-StreamHelper
-- ReadFully
-
-ShellHelper
-- Escape
-- ExecuteShellCommand</Description>
+    <Description>Small but useful .NET helper classes</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageTags>helper random array convert padding crypt xor pkcs7 well512</PackageTags>
     <Version>0.2.0</Version>
     <PackageId>helper-net</PackageId>
     <Product>helper-net</Product>
+    <Summary>
+      ArrayHelper
+      - ConcatArrays
+      - SubArray
+      - ConstantTimeEquals
+
+      ConvensionHelper
+      - IntegerToLittleEndian
+
+      CryptoHelper
+      - Xor
+
+      PaddingHelper
+      - AddPkcs7
+      - RemovePkcs7
+      - AddZero
+      - RemoveZero
+
+      RandomHelper
+      - SecureRandomProvider
+      - RandomProvider
+      - Well512RandomProvider
+
+      StreamHelper
+      - ReadFully
+
+      ShellHelper
+      - Escape
+      - ExecuteShellCommand
+    </Summary>
     <PackageReleaseNotes>.NET Standard 2.0</PackageReleaseNotes>
   </PropertyGroup>
 

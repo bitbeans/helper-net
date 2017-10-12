@@ -1,15 +1,15 @@
-#helper-net [![Build status](https://img.shields.io/appveyor/ci/bitbeans/helper-net.svg?style=flat-square)](https://ci.appveyor.com/project/bitbeans/helper-net) [![Build Status](https://img.shields.io/travis/bitbeans/helper-net.svg?style=flat-square)](https://travis-ci.org/bitbeans/helper-net) [![NuGet Version](https://img.shields.io/nuget/v/helper-net.svg?style=flat-square)](https://www.nuget.org/packages/helper-net/) [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/bitbeans/helper-net/blob/master/LICENSE.md)
+**helper-net** [![Build status](https://img.shields.io/appveyor/ci/bitbeans/helper-net.svg?style=flat-square)](https://ci.appveyor.com/project/bitbeans/helper-net) [![Build Status](https://img.shields.io/travis/bitbeans/helper-net.svg?style=flat-square)](https://travis-ci.org/bitbeans/helper-net) [![NuGet Version](https://img.shields.io/nuget/v/helper-net.svg?style=flat-square)](https://www.nuget.org/packages/helper-net/) [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/bitbeans/helper-net/blob/master/LICENSE.md)
 
 A small collection of useful helper methods that I use in several projects.
 
 
-##Status
+# Status #
 
 **Pull requests and/or optimization proposals are always welcome!**
 
-##Scope
+# Scope #
 
-###ArrayHelper
+## ArrayHelper ##
 
 ```csharp 
 static T[] ConcatArrays<T>(params T[][] arrays)
@@ -31,25 +31,25 @@ static T[] SubArray<T>(T[] arr, int start)
 static bool ConstantTimeEquals(byte[] a, byte[] b)
 ```
 
-###ConvensionHelper
+## ConvensionHelper ##
 
 ```csharp 
 static byte[] IntegerToLittleEndian(int data)
 ```
 
-###CryptoHelper
+## CryptoHelper ##
 
 ```csharp 
 static byte[] Xor(byte[] data, IReadOnlyList<byte> keys)
 ```
 
-###StreamHelper
+## StreamHelper ##
 
 ```csharp 
 static byte[] ReadFully(Stream input)
 ```
 
-###ShellHelper
+## ShellHelper ##
 
 ```csharp 
 static string Escape(string argument, bool quote = false)
@@ -59,7 +59,7 @@ static string Escape(string argument, bool quote = false)
 static string ExecuteShellCommand(string filename, string arguments, int timeout = 9000)
 ```
 
-###PaddingHelper
+## PaddingHelper ##
 
 ```csharp 
 static byte[] AddPkcs7(byte[] data, int paddingLength)
@@ -77,9 +77,9 @@ static byte[] AddZero(byte[] data, int paddingLength)
 static byte[] RemoveZero(byte[] paddedByteArray)
 ```
 
-###RandomHelper
+## RandomHelper ##
 
-#####SecureRandomProvider
+### SecureRandomProvider ###
 
 ```csharp 
 static int Next()
@@ -101,7 +101,7 @@ static void GetBytes(byte[] data)
 static void GetNonZeroBytes(byte[] data)
 ```
 
-#####RandomProvider
+### RandomProvider ###
 
 ```csharp 
 static int Next()
@@ -119,7 +119,7 @@ static int Next(int minValue, int maxValue)
 static void GetBytes(byte[] data)
 ```
 
-#####Well512RandomProvider
+### Well512RandomProvider ###
 
 ```csharp 
 static int Next()
