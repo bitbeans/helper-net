@@ -10,7 +10,7 @@
     <Company>bitbeans</Company>
     <PackageProjectUrl>https://github.com/bitbeans/helper-net</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/bitbeans/helper-net/master/LICENSE.md</PackageLicenseUrl>
-    <Copyright>Copyright (c) 2015 - 2017 Christian Hermann (bitbeans)</Copyright>
+    <Copyright>Copyright (c) 2015 - 2018 Christian Hermann (bitbeans)</Copyright>
     <Description>Small but useful .NET helper classes</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
